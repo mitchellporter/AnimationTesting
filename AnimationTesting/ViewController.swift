@@ -33,11 +33,20 @@ class ViewController: UIViewController {
     
     func firstAnimation() {
         
-        let animation = JNWSpringAnimation(keyPath: "position.y")
-        animation.fromValue = self.redBox.layer.position.y
-        animation.toValue = self.redBox.layer.position.y + CGFloat(100.0)
-        animation.delegate = self
-        redBox.layer.addAnimation(animation, forKey: animation.keyPath)
+        let animation = POPSpringAnimation(propertyNamed: kPOPLayoutConstraintConstant)
+        animation.fromValue = redBoxCenterYContraint.constant
+        animation.toValue = redBoxCenterYContraint.constant + CGFloat(100.0)
+        animation.completionBlock = {(animation, finished) in
+            self.secondAnimation()
+        }
+        self.redBoxCenterYContraint.pop_addAnimation(animation, forKey: "xyz")
+        
+        
+//        let animation = JNWSpringAnimation(keyPath: "position.y")
+//        animation.fromValue = self.redBox.layer.position.y
+//        animation.toValue = self.redBox.layer.position.y + CGFloat(100.0)
+//        animation.delegate = self
+//        redBox.layer.addAnimation(animation, forKey: animation.keyPath)
         
         
         
@@ -60,10 +69,24 @@ class ViewController: UIViewController {
     
     func secondAnimation() {
         
-        let animation = JNWSpringAnimation(keyPath: "position.y")
-        animation.fromValue = self.redBox.layer.position.y
-        animation.toValue = self.redBox.layer.position.y - CGFloat(100.0)
-        redBox.layer.addAnimation(animation, forKey: animation.keyPath)
+        
+        let animation = POPSpringAnimation(propertyNamed: kPOPLayoutConstraintConstant)
+        animation.fromValue = redBoxCenterYContraint.constant
+        animation.toValue = redBoxCenterYContraint.constant - CGFloat(100.0)
+        animation.completionBlock = {(animation, finished) in
+            // done
+            print(self.redBox.frame)
+            
+        }
+        self.redBoxCenterYContraint.pop_addAnimation(animation, forKey: "xyz")
+
+        
+        
+        
+//        let animation = JNWSpringAnimation(keyPath: "position.y")
+//        animation.fromValue = self.redBox.layer.position.y
+//        animation.toValue = self.redBox.layer.position.y - CGFloat(100.0)
+//        redBox.layer.addAnimation(animation, forKey: animation.keyPath)
         
         
         
