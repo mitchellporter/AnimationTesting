@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimationTesting" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="80C-rk-BOC" userLabel="Green box">
+                                <rect key="frame" x="275" y="275" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.53333333329999999" green="0.85490196080000003" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="0jW-hd-g2G"/>
+                                    <constraint firstAttribute="width" constant="50" id="1N5-ZZ-wCG"/>
+                                    <constraint firstAttribute="height" constant="50" id="AQb-ue-b52"/>
+                                    <constraint firstAttribute="height" constant="50" id="P3U-nw-NtQ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="Rff-Kg-7jY"/>
+                                    <constraint firstAttribute="width" constant="50" id="pJi-CU-zM9"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0jW-hd-g2G"/>
+                                        <exclude reference="P3U-nw-NtQ"/>
+                                        <exclude reference="Rff-Kg-7jY"/>
+                                        <exclude reference="pJi-CU-zM9"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p5b-Z2-01s">
+                                <rect key="frame" x="275" y="275" width="50" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.011039157460000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6mU-Sc-8ZA"/>
+                                    <constraint firstAttribute="width" constant="50" id="myu-l6-eSL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p5b-Z2-01s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LBa-zG-qWv"/>
+                            <constraint firstItem="80C-rk-BOC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="S9o-28-qXA"/>
+                            <constraint firstItem="p5b-Z2-01s" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Tjb-h4-tXs"/>
+                            <constraint firstItem="80C-rk-BOC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XLN-aS-hJD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="redBox" destination="p5b-Z2-01s" id="awZ-bH-hLO"/>
+                        <outlet property="redBoxCenterYContraint" destination="Tjb-h4-tXs" id="FlO-62-haP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
