@@ -12,9 +12,13 @@
 		C38545F21C6D910B0007AB2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38545F01C6D910B0007AB2A /* Main.storyboard */; };
 		C38545F41C6D910B0007AB2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C38545F31C6D910B0007AB2A /* Assets.xcassets */; };
 		C38545F71C6D910B0007AB2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38545F51C6D910B0007AB2A /* LaunchScreen.storyboard */; };
+		C4A920DC20004D6938810BE1 /* Pods_AnimationTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1B9AD12A01A182B2F5FE9E /* Pods_AnimationTesting.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B1B9AD12A01A182B2F5FE9E /* Pods_AnimationTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimationTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61E63DF419C46BACBC578BBE /* Pods-AnimationTesting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationTesting.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationTesting/Pods-AnimationTesting.debug.xcconfig"; sourceTree = "<group>"; };
+		7EB9DEB03BF40DA1B620F369 /* Pods-AnimationTesting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationTesting.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationTesting/Pods-AnimationTesting.release.xcconfig"; sourceTree = "<group>"; };
 		C38545E91C6D910B0007AB2A /* AnimationTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38545EC1C6D910B0007AB2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C38545EE1C6D910B0007AB2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4A920DC20004D6938810BE1 /* Pods_AnimationTesting.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83E48935C37A645F69716816 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61E63DF419C46BACBC578BBE /* Pods-AnimationTesting.debug.xcconfig */,
+				7EB9DEB03BF40DA1B620F369 /* Pods-AnimationTesting.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C38545E01C6D910B0007AB2A = {
 			isa = PBXGroup;
 			children = (
 				C38545EB1C6D910B0007AB2A /* AnimationTesting */,
 				C38545EA1C6D910B0007AB2A /* Products */,
+				83E48935C37A645F69716816 /* Pods */,
+				D5B84B651BD93E448B0F4F50 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = AnimationTesting;
 			sourceTree = "<group>";
 		};
+		D5B84B651BD93E448B0F4F50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B1B9AD12A01A182B2F5FE9E /* Pods_AnimationTesting.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C38545FB1C6D910B0007AB2A /* Build configuration list for PBXNativeTarget "AnimationTesting" */;
 			buildPhases = (
+				9B8821117E45CE33AC12A1A2 /* Check Pods Manifest.lock */,
 				C38545E51C6D910B0007AB2A /* Sources */,
 				C38545E61C6D910B0007AB2A /* Frameworks */,
 				C38545E71C6D910B0007AB2A /* Resources */,
+				E3B861EBB98B9864463EE133 /* Embed Pods Frameworks */,
+				7B05CE25DD8F7BE09F661DC9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B05CE25DD8F7BE09F661DC9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimationTesting/Pods-AnimationTesting-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B8821117E45CE33AC12A1A2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E3B861EBB98B9864463EE133 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimationTesting/Pods-AnimationTesting-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C38545E51C6D910B0007AB2A /* Sources */ = {
@@ -245,6 +320,7 @@
 		};
 		C38545FC1C6D910B0007AB2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61E63DF419C46BACBC578BBE /* Pods-AnimationTesting.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AnimationTesting/Info.plist;
@@ -256,6 +332,7 @@
 		};
 		C38545FD1C6D910B0007AB2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EB9DEB03BF40DA1B620F369 /* Pods-AnimationTesting.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AnimationTesting/Info.plist;
@@ -284,6 +361,7 @@
 				C38545FD1C6D910B0007AB2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

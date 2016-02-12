@@ -26,11 +26,13 @@ class ViewController: UIViewController {
         super.viewDidLayoutSubviews()
         
         print(redBox.frame)
+        
+        
     }
     
     func firstAnimation() {
         self.redBoxCenterYContraint.constant += CGFloat(100)
-        UIView.animateWithDuration(1.0, delay: 0.0, options: [], animations: { () -> Void in
+        UIView.animateWithDuration(1.0, delay: 0.0, options: [.CurveEaseOut], animations: { () -> Void in
             self.redBox.superview?.layoutIfNeeded()
             
             }) { (complete) -> Void in
@@ -47,7 +49,7 @@ class ViewController: UIViewController {
     
     func secondAnimation() {
         self.redBoxCenterYContraint.constant = self.originalY
-        UIView.animateWithDuration(5.0, delay: 0.0, options: [], animations: { () -> Void in
+        UIView.animateWithDuration(5.0, delay: 0.0, options: [.CurveEaseOut], animations: { () -> Void in
             self.redBox.superview?.layoutIfNeeded()
             }) { (complete) -> Void in
                 print(self.redBox.frame)
