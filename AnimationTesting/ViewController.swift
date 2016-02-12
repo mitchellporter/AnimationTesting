@@ -8,6 +8,7 @@
 
 import UIKit
 import JNWSpringAnimation
+import pop
 
 class ViewController: UIViewController {
     
@@ -18,7 +19,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
        NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: "firstAnimation", userInfo: nil, repeats: false)
     }

@@ -6,6 +6,7 @@ inhibit_all_warnings!
 
 target ‘AnimationTesting’ do
 pod ‘JNWSpringAnimation’
+pod 'pop', '~> 1.0'
 end
 
 post_install do |installer|
