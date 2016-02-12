@@ -1,12 +1,18 @@
 PODS:
+  - DKChainableAnimationKit (1.6.0)
+  - EasyAnimation (1.0.2)
   - JNWSpringAnimation (0.7.1)
   - pop (1.0.9)
 
 DEPENDENCIES:
+  - DKChainableAnimationKit (~> 1.6.0)
+  - EasyAnimation
   - JNWSpringAnimation
   - pop (~> 1.0)
 
 SPEC CHECKSUMS:
+  DKChainableAnimationKit: fe28909402825a42cc632b211eadcc39ad2bee38
+  EasyAnimation: 9615e40f58aa7d8d6a67de66e0edda1903ffa990
   JNWSpringAnimation: cd4c2f4464324f63f176c3624ffccf205211a100
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
 

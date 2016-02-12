@@ -7,6 +7,8 @@ inhibit_all_warnings!
 target ‘AnimationTesting’ do
 pod ‘JNWSpringAnimation’
 pod 'pop', '~> 1.0'
+pod 'EasyAnimation'
+pod 'DKChainableAnimationKit', '~> 1.6.0'
 end
 
 post_install do |installer|

@@ -84,10 +84,14 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-AnimationTesting/DKChainableAnimationKit.framework"
+  install_framework "Pods-AnimationTesting/EasyAnimation.framework"
   install_framework "Pods-AnimationTesting/JNWSpringAnimation.framework"
   install_framework "Pods-AnimationTesting/pop.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-AnimationTesting/DKChainableAnimationKit.framework"
+  install_framework "Pods-AnimationTesting/EasyAnimation.framework"
   install_framework "Pods-AnimationTesting/JNWSpringAnimation.framework"
   install_framework "Pods-AnimationTesting/pop.framework"
 fi
